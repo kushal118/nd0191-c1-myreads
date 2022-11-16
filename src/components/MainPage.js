@@ -29,8 +29,7 @@ const MainPage = ({
         currentlyReading
       }
       getStatus = {
-        getStatus
-      }
+        getStatus}
       />
 
       <

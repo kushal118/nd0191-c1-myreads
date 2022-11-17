@@ -9,8 +9,7 @@ const MainPage = ({
     wantToRead,
     moveToShelf,
     getStatus,
-    showSearchPage,
-    setShowSearchpage
+    
   }) => {
 
     return ( <

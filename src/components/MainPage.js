@@ -1,6 +1,8 @@
 import CurrentlyReading from "./CurrentlyReading";
 import Read from "./Read";
 import WantToRead from "./WantToRead";
+import { Link } from "react-router-dom";
+
 const MainPage = ({
     read,
     currentlyReading,
@@ -15,9 +17,8 @@ const MainPage = ({
       div className = "list-books" >
       <
       div className = "list-books-title" >
-      <
-      h1 > MyReads < /h1> <
-      /div> <
+      <h1> MyReads </h1> 
+      </div> <
       div className = "list-books-content" >
       <
       div >
@@ -28,8 +29,7 @@ const MainPage = ({
       currentlyReading = {
         currentlyReading
       }
-      getStatus = {
-        getStatus}
+      getStatus = {getStatus}
       />
 
       <
@@ -52,16 +52,13 @@ const MainPage = ({
       getStatus = {
         getStatus
       }
-      /> <
-      /div> <
-      /div> <
-      div className = "open-search" >
-      <
-      a onClick = {
-        () => setShowSearchpage(!showSearchPage)
-      } > Add a book < /a> <
-      /div> <
-      /div> );
+      /> 
+      </div> 
+      </div>
+      <div className = "open-search" >
+      <Link to="/search">Add a book</Link> 
+      </div> 
+      </div> );
     }
 
     export default MainPage;

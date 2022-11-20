@@ -2,6 +2,7 @@ import CurrentlyReading from "./CurrentlyReading";
 import Read from "./Read";
 import WantToRead from "./WantToRead";
 import { Link } from "react-router-dom";
+import ListBooksContant from "./ListBooksContent";
 
 const MainPage = ({
     read,
@@ -12,17 +13,15 @@ const MainPage = ({
     
   }) => {
 
-    return ( <
+    return ( /*<
       div className = "list-books" >
-      <
-      div className = "list-books-title" >
+      <div className = "list-books-title" >
       <h1> MyReads </h1> 
-      </div> <
-      div className = "list-books-content" >
-      <
-      div >
-      <
-      CurrentlyReading moveToShelf = {
+      </div> 
+      <div className = "list-books-content" >
+      <div >
+      <CurrentlyReading 
+      moveToShelf = {
         moveToShelf
       }
       currentlyReading = {
@@ -31,8 +30,7 @@ const MainPage = ({
       getStatus = {getStatus}
       />
 
-      <
-      WantToRead wantToRead = {
+      <WantToRead wantToRead = {
         wantToRead
       }
       moveToShelf = {
@@ -41,8 +39,8 @@ const MainPage = ({
       getStatus = {
         getStatus
       }
-      /> <
-      Read read = {
+      /> 
+      <Read read = {
         read
       }
       moveToShelf = {
@@ -57,7 +55,13 @@ const MainPage = ({
       <div className = "open-search" >
       <Link to="/search">Add a book</Link> 
       </div> 
-      </div> );
+      </div>*/
+      
+      <ListBooksContant getStatus={getStatus} read={read} currentlyReading={currentlyReading} moveToShelf={moveToShelf} wantToRead={wantToRead}/>
+      
+      
+      
+      );
     }
 
     export default MainPage;

@@ -5,22 +5,14 @@ const Read = ({
   moveToShelf,
   getStatus
 }) => {
-  return ( <
-    div className = "bookshelf" >
-    <
-    h2 className = "bookshelf-title" > Read < /h2> <
-    div className = "bookshelf-books" >
-    <
-    ol className = "books-grid" > {
+  return ( 
+  <div className = "bookshelf">
+    <h2 className = "bookshelf-title" > Read </h2> 
+    <div className = "bookshelf-books">
+    <ol className = "books-grid" > {
       read.map((book, index) => {
-        return ( <
-          li key = {
-            index
-          } >
-          <
-          Book book = {
-            book
-          }
+        return ( <li key = {index}>
+          <Book book = {book}
           onMoveToShelf = {
             (e) => moveToShelf(e, book)
           }
@@ -30,18 +22,16 @@ const Read = ({
           />
 
 
-          <
-          /li>
+          </li>
 
         )
       })
     }
 
 
-    <
-    /ol> <
-    /div> <
-    /div>
+    </ol> 
+    </div> 
+    </div>
   );
 }
 

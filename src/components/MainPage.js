@@ -13,7 +13,7 @@ const MainPage = ({
     
   }) => {
 
-    return ( /*<
+    return ( /*</><
       div className = "list-books" >
       <div className = "list-books-title" >
       <h1> MyReads </h1> 
@@ -55,12 +55,14 @@ const MainPage = ({
       <div className = "open-search" >
       <Link to="/search">Add a book</Link> 
       </div> 
-      </div>*/
-      
+      </div> */
+      <>
       <ListBooksContant getStatus={getStatus} read={read} currentlyReading={currentlyReading} moveToShelf={moveToShelf} wantToRead={wantToRead}/>
       
-      
-      
+      <div className = "open-search" >
+      <Link to="/search">Add a book</Link> 
+      </div>
+      </>
       );
     }
 

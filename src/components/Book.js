@@ -21,7 +21,7 @@ const Book = ({
     onChange = {
       onMoveToShelf
     }>
-    <option value = "none"
+    <option 
     disabled >
     Move to...
     </option> 
